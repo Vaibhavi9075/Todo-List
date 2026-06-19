@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  color: #000;
+}
+
+#themeChanger {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+ 
+}
+
+.mainCont {  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  padding: 20px;
+}
+
+.list-cont {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.label-cont {
+  width: 100%;
+  border: 1px solid #cccccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 10px;
+  background: #fff;
+  gap: 10px;
+}
+
+.task-desc {
+  width: 100%;
+  margin-top: 6px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+  font-size: 14px;
+}
+
+.delBtn {
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.delBtn:focus {
+  outline: none;
+}
+
+/* ------------------ Responsive Design ------------------ */
+
+/* Tablets (up to 992px) */
+@media (max-width: 992px) {
+   .label-cont {
+    font-size: 15px;
+    flex-wrap: wrap;
+  }
+  .task-desc {
+    font-size: 13px;
+  }
+}
+
+/* Small Tablets / Large Phones (up to 768px) */
+@media (max-width: 768px) {
+  .mainCont {
+    padding: 15px;
+  }
+  .label-cont {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 6px;
+  }
+  .delBtn {
+    align-self: flex-end;
+  }
+}
+
+/* Mobile Devices (up to 576px) */
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  } 
+  .mainCont {
+    padding: 10px;
+  }
+  .label-cont {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .task-desc {
+    font-size: 12px;
+  }
+  #themeChanger {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>ToDo List</title>
+</head>
+<body>
+       <nav>
+            <a href="index.html">
+            <button class="btn btn-info">Log Out</button>
+            
+          </a>
+         <button><i id="themeChanger" class="fa-solid fa-sun"></i></button>
+        </nav>
+
+       <div class="mainCont"> 
+        <h1>ToDo List</h1>        
+        <div class="subCont shadow m-3 p-3 w-50">            
+            <input id="userInputOne" type="text" class="form-control" placeholder="Enter a Task" required> 
+             <p id="errorMsgFirst"></p>
+             <input id="userInputTwo" type="text" class="form-control" placeholder="Enter a the task Descripstion" required> 
+                                                           
+             <p id="errorMsgSecond"></p>
+             <br>
+             <button id="addUserInput" class="btn btn-outline-success">Add</button>
+            </div>
+
+           <div class="w-50">
+              <h3 class="d-flex text-start">List of Task</h3>
+              <br>
+              <ul id="userTask"></ul>             
+           </div>
+           
+           <button onclick="saveInfo()" class="btn btn-outline-danger">Save</button>
+       
+          
+       </div>
+       <script src="script.js"></script>
+</body>
+</html>
